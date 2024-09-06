@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(12, 12, 12);
+}
+
+.fondo {
+  position: absolute;
+  top: 0px;
+  z-index: 0;
+  overflow: hidden;
+  margin-right: 1250px;
+}
+
+.pacman {
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  height: 40px;
+  top: 280px;
+  position: absolute;
+  animation-name: pacman;
+  animation-duration: 20s;
+  animation-timing-function: linear; 
+  animation-iteration-count: infinite;
+}
+.circulo1 {
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  height: 20px;
+  top: 280px;
+  left: 380px;
+  position: absolute;
+}
+.circulo2 {
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  height: 20px;
+  top: 280px;
+  left: 920px;
+  position: absolute;
+}
+
+
+.fantasma1 {
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  height: 40px;
+  top: 10px;
+  left: 890px;
+  position: absolute;
+  animation-name: fantasma1;
+  animation-duration: 10s;
+  animation-timing-function: linear; 
+  animation-iteration-count: infinite;
+  
+}
+
+@keyframes pacman{
+0% {left:0px; top:280px;transform: rotate(0deg);}
+5% {left:0px; top:280px;transform: rotate(0deg);}
+10%{left:490px; top:280px;transform: rotate(90deg);}
+15%{left:490px; top:400px;transform: rotate(180deg);}
+20%{left: 400px; top:400px;transform: rotate(90deg);}
+25%{left: 400px; top:460px;transform: rotate(0deg);}
+30%{left: 430px; top:460px;transform: rotate(0deg);}
+35%{left: 430px; top:510px;transform: rotate(180deg);}  
+40%{left: 390px; top:510px;transform: rotate(180deg);}
+45%{left: 390px; top:580px;transform: rotate(90deg);}
+50%{left: 900px; top:580px;transform: rotate(0deg);}
+55%{left: 900px; top:510px;transform: rotate(-90deg);}
+60%{left: 800px; top:510px;transform: rotate(-180deg);}
+65%{left: 800px; top:280px;transform: rotate(-90deg);}
+70%{left: 1250px; top:280px;transform: rotate(0deg);}
+100%{left: 1250px; top:280px;transform: rotate(0deg);}
+}
+
+@keyframes fantasma1{
+  0% {left:890px; top:10px;}
+  5%{left:890px; top:150px ;}
+  10%{left:790px; top:150px ;}
+  20%{left:790px; top:90px ;}
+  30%{left:550px; top:90px ;}
+  35%{left:550px; top:150px ;}
+  40%{left:610px; top:150px ;}
+  45%{left:610px; top:210px ;}
+  50%{left:675px; top:210px ;}
+  55%{left:675px; top:150px ;}
+  60%{left:735px; top:150px ;}
+  65%{left:735px; top:90px ;}
+  70%{left:790px; top:90px ;}
+  75%{left:790px; top:10px ;}
+  100{left:890px; top:10px;}
+  
+}
